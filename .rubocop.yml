@@ -1,0 +1,64 @@
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'bin/**/*'
+    - 'vendor/**/*'
+    - 'db/**/*'
+    - 'node_modules/**/*'
+
+Layout/LineLength:
+  Max: 180
+  Exclude:
+    - 'config/initializers/notifications.rb'
+
+Metrics/ClassLength:
+  Max: 200
+
+Metrics/BlockLength:
+  Exclude:
+    - 'config/**/*'
+    - 'spec/**/*'
+
+Metrics/MethodLength:
+  Max: 50
+  Exclude:
+    - 'scripts/**/*'
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
+
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+
+Lint/MixedRegexpCaptureTypes:
+  Enabled: true
+
+Style/AccessorGrouping:
+  Enabled: true
+
+Style/BisectedAttrAccessor:
+  Enabled: true
+
+Style/RedundantAssignment:
+  Enabled: true
+
+Style/RedundantFetchBlock:
+  Enabled: true
+
+Style/RedundantRegexpCharacterClass:
+  Enabled: true
+
+Style/RedundantRegexpEscape:
+  Enabled: true
+
+Style/SlicingWithRange:
+  Enabled: true
+
+Style/GuardClause:
+  Enabled: false

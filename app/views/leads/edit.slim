@@ -1,0 +1,13 @@
+.container.text-center
+  .row.form-row
+    .offset-sm-3.col-sm-6
+      = form_with url: leads_path, data: { remote: false }, method: 'PATCH' do
+        .form-fields
+          = text_field_tag 'street', nil, placeholder: 'Street', required: true
+          = text_field_tag 'city', nil, placeholder: 'City', required: true
+          = text_field_tag 'state', nil, placeholder: 'State'
+          = text_field_tag 'zip_code', nil, placeholder: 'Zip Code', required: true
+        = submit_tag "CONTINUE", class: "continue-btn"
+
+- flash.each do |name, message|
+  p.text-danger.text-center = message

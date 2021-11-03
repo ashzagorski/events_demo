@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   resources :leads do
     patch :update, on: :collection
   end
+
+  resources :infos
+  resources :thank_yous
 end
